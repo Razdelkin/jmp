@@ -36,7 +36,7 @@ public class Application {
     public static Application getInstance() {
         return SingletonHolder.instance;
     }
-
+//there are several IFELSE statement. What pattern can we use and why? Explain
     void start(String mode) {
         logger.info("Application.start()");
         if (mode.equals("prototype")) {
