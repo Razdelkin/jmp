@@ -1,10 +1,7 @@
 package comepam.razdelkin.structuralpatterns.figures.impl;
 
-import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import comepam.razdelkin.structuralpatterns.figures.Figure;
-import comepam.razdelkin.structuralpatterns.render.ShapeRendererContainer;
-
 
 /**
  * Created by Alex on 3/13/2017.

@@ -16,8 +16,8 @@ public class House {
     private Figure thickWalls = new ThickLinesFigureDecorator(new Rectangle());
     private int triangleX = Gdx.graphics.getWidth()/2;
     private int triangleY = Gdx.graphics.getHeight()/2;
-    private int rectX = (int) (triangleX-Figure.SIZE/2);
-    private int rectY = (int) (triangleY-Figure.SIZE);
+    private int rectX = triangleX-Figure.SIZE/2;
+    private int rectY = triangleY-Figure.SIZE;
 
     public void drawFacade(){
         greenRoof.draw(triangleX, triangleY);

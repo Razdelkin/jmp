@@ -6,7 +6,7 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
  * Created by Alex on 3/12/2017.
  */
 public interface Figure {
-    float SIZE = 150F;
+    int SIZE = 150;
 
     void draw(int x, int y);
 
