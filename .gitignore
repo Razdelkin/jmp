@@ -19,5 +19,5 @@
 *.rar
 
 
-
+.build/
 .idea/
