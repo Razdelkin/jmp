@@ -16,7 +16,6 @@ public class CompositeFigure implements Figure {
     public CompositeFigure(){
         shapeRenderer = new ShapeRenderer();
         shapeRenderer.setAutoShapeType(true);
-
     }
 
     private List<CompositeFigure> compositeFigures = new ArrayList<CompositeFigure>();
