@@ -3,6 +3,8 @@ package comepam.razdelkin.structuralpatterns;
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
+import comepam.razdelkin.structuralpatterns.figures.FrameworkFigure;
+import comepam.razdelkin.structuralpatterns.patterns.adapter.RectangleAdapter;
 import comepam.razdelkin.structuralpatterns.patterns.composite.CompositeFigure;
 import comepam.razdelkin.structuralpatterns.patterns.facade.House;
 
@@ -14,9 +16,14 @@ public class Main extends ApplicationAdapter {
 	CompositeFigure cf3;
 	CompositeFigure cf4;
 	CompositeFigure cf5;
-
+	FrameworkFigure frameworkFigure;
 	@Override
 	public void create () {
+
+		 frameworkFigure = new RectangleAdapter();
+
+
+
 		//we cannot initialize these in constructor because openGL is not initialized yet
 		house = new House();
 
@@ -30,6 +37,8 @@ public class Main extends ApplicationAdapter {
 		cf1.add(cf3);
 		cf3.add(cf4);
 		cf4.add(cf5);
+
+
 	}
 
 	@Override
@@ -43,6 +52,9 @@ public class Main extends ApplicationAdapter {
 
 		//draw stairs
 		cf1.draw(205, 95);
+
+		frameworkFigure.paint(5, 5, 5, 5);
+
 	}
 	
 	@Override
