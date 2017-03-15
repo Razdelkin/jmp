@@ -1,7 +1,6 @@
 package comepam.razdelkin.structuralpatterns.patterns.adapter;
 
 import com.badlogic.gdx.math.Vector2;
-import com.sun.xml.internal.ws.api.server.Adapter;
 import comepam.razdelkin.structuralpatterns.figures.Figure;
 import comepam.razdelkin.structuralpatterns.figures.FrameworkFigure;
 import comepam.razdelkin.structuralpatterns.patterns.flyweight.FlyweightFactory;
