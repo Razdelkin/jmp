@@ -1,6 +1,7 @@
 package com.razdelkin;
 
-import org.springframework.stereotype.Service;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -9,14 +10,25 @@ import java.util.Map;
 /**
  * Created by Alex on 3/18/2017.
  */
-@Service
 public class UserService {
+
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
+
 
 
     public UserService(){    }
 
-    private Map<Integer, User> userContainer = new HashMap<>();
 
+    /**
+     *  just to test config properties
+     *  I don't really see any point to inject admin user in service constructor in real projects
+     */
+    public UserService(User admin){
+        createUser(admin);
+    }
+
+
+    private Map<Integer, User> userContainer = new HashMap<>();
 
     public User getUser(int id){
         return userContainer.get(id);
@@ -37,8 +49,6 @@ public class UserService {
         userContainer.put(user.getId(), user);
         return user;
     }
-
-
 
 
 }

@@ -17,6 +17,15 @@ public class User {
     private String lastName;
     private String email;
     private String phone;
+    private String city;
+    private String street;
+    private String house;
+
+
+    public int getId() {
+        return id;
+    }
+
 
     public String getFirstName() {
         return firstName;
@@ -72,17 +81,5 @@ public class User {
 
     public void setHouse(String house) {
         this.house = house;
-    }
-
-    private String city;
-    private String street;
-    private String house;
-
-    class UserBuilder{
-
-    }
-
-    public int getId() {
-        return id;
     }
 }
