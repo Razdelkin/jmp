@@ -25,7 +25,7 @@ public class UserController {
 
     @Autowired
     private UserService userService;
-
+    //common part again /user/
     @GetMapping("/user/{userId}")
     public User getUser(@PathVariable int userId){
         return userService.getUser(userId);

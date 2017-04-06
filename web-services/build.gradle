@@ -15,8 +15,8 @@ tasks.withType(JavaCompile) {
 
 
 repositories {
-        
-     maven { url "http://repo.maven.apache.org/maven2" }
+    mavenLocal()
+    mavenCentral()
 }
 dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version:'1.4.2.RELEASE'
