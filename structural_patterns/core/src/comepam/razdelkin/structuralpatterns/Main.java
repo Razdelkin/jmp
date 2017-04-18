@@ -9,7 +9,7 @@ import comepam.razdelkin.structuralpatterns.patterns.composite.CompositeFigure;
 import comepam.razdelkin.structuralpatterns.patterns.facade.House;
 
 public class Main extends ApplicationAdapter {
-
+//all project use spaces, in this file tabs.
 	House house;
 	CompositeFigure cf1;
 	CompositeFigure cf2;

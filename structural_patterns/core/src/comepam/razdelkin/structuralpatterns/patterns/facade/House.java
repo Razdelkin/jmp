@@ -2,8 +2,6 @@ package comepam.razdelkin.structuralpatterns.patterns.facade;
 
 import com.badlogic.gdx.Gdx;
 import comepam.razdelkin.structuralpatterns.figures.Figure;
-import comepam.razdelkin.structuralpatterns.figures.impl.Rectangle;
-import comepam.razdelkin.structuralpatterns.figures.impl.Triangle;
 import comepam.razdelkin.structuralpatterns.patterns.decorator.GreenFigureDecorator;
 import comepam.razdelkin.structuralpatterns.patterns.decorator.ThickLinesFigureDecorator;
 import comepam.razdelkin.structuralpatterns.patterns.flyweight.FlyweightFactory;
